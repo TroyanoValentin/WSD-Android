@@ -32,7 +32,7 @@ jobs:
         uses: android-actions/setup-android@v3
         with:
           accept-android-sdk-licenses: false
-          # Do not request the obsolete 'tools' package; it no longer exists in sdkmanager.
+          packages: platform-tools
 
       - name: Accept Android SDK licenses
         shell: bash
